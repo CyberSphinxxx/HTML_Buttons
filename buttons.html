@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Button</title>
+</head>
+<body>
+
+        <!-- Button for Hi -->
+        <button onclick="hi()"
+                style="background-color: blue; 
+                       color: greenyellow;
+                       border-radius: 9px;
+                       font-size: larger;
+                       font-family: Verdana;" >
+            Hi
+        </button>
+
+        <!-- Button for GoodBye -->
+        <button onclick="goodbye()"
+                style="background-color: blue;
+                       color: greenyellow;
+                       border-radius: 9px;
+                       font-size: larger;
+                       font-family: Verdana;" >
+            GoodBye
+        </button>
+
+
+<!-- Text -->
+    <p id="test" style="color: red;"> Hello </p>
+
+    <!-- Sets the text to Goodbye! -->
+    <script>
+        function goodbye(){
+            document.getElementById("test").innerHTML = "GoodBye!";
+        }
+    </script>
+
+    <!-- Sets the text to Hi! -->
+    <script>
+        function hi(){
+            document.getElementById("test").innerHTML = "Hi!";
+        }
+    </script>
+
+</body>
+</html>
